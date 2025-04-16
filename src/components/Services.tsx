@@ -1,16 +1,16 @@
 
 import { 
-  Headstone, 
+  BookMarked, 
   Users, 
   Clock, 
   Palette, 
-  GanttChart, 
+  CalendarCheck, 
   Map 
 } from 'lucide-react';
 
 const serviceData = [
   {
-    icon: <Headstone size={36} />,
+    icon: <BookMarked size={36} />,
     title: "Monuments & Headstones",
     description: "Custom designed memorial stones, from traditional to modern designs, crafted with exceptional quality."
   },
@@ -30,7 +30,7 @@ const serviceData = [
     description: "Professional installation and placement services at your chosen cemetery or memorial location."
   },
   {
-    icon: <GanttChart size={36} />,
+    icon: <CalendarCheck size={36} />,
     title: "Pre-Planning",
     description: "Memorial pre-planning services that allow you to make decisions thoughtfully and without pressure."
   },
