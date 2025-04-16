@@ -64,7 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				memorial: {
-					blue: '#3B5F7F',
+					blue: '#1C4B8D',  // Dark blue from the logo
+					red: '#D62828',   // Red from the maple leaf
+					white: '#FFFFFF', 
 					gray: '#6D7A8C',
 					lightgray: '#E8ECEF',
 					stone: '#D2CBBC',
