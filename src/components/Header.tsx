@@ -23,7 +23,7 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className={`text-2xl font-bold ${isScrolled ? 'text-memorial-blue' : 'text-white'}`}>
+          <span className={`text-2xl font-bold ${isScrolled ? 'text-memorial-blue' : 'text-memorial-blue'}`}>
             Eastern Memorials
           </span>
         </a>
@@ -34,9 +34,11 @@ const Header = () => {
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`}
-              className={`font-medium hover:text-memorial-blue transition-colors ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`font-medium transition-colors 
+                ${isScrolled 
+                  ? 'text-memorial-blue hover:text-memorial-blue/70' 
+                  : 'text-memorial-blue hover:text-memorial-blue/70'
+                }`}
             >
               {item}
             </a>
@@ -50,9 +52,9 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? (
-            <X className={isScrolled ? 'text-gray-700' : 'text-white'} size={24} />
+            <X className={`text-memorial-blue`} size={24} />
           ) : (
-            <Menu className={isScrolled ? 'text-gray-700' : 'text-white'} size={24} />
+            <Menu className={`text-memorial-blue`} size={24} />
           )}
         </button>
       </div>
@@ -65,7 +67,7 @@ const Header = () => {
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
-                className="font-medium text-gray-700 hover:text-memorial-blue transition-colors"
+                className="font-medium text-memorial-blue hover:text-memorial-blue/70 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item}
